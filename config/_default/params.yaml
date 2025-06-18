@@ -8,6 +8,11 @@ appearance:
   mode: system
   color: emerald
 
+params:
+  profile:
+    avatar: "avatar.jpg"
+    avatar_size: 250
+
 # SEO
 marketing:
   seo:
