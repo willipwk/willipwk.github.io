@@ -13,7 +13,7 @@ body {
     text-align: center;
     padding: 30px 10px;
     position: relative;
-    color: black;
+    color: black !important;
     /* a {
       color: black;
     } */
@@ -65,7 +65,7 @@ body {
 
   .ul-interests li {
     font-size: 0.9rem;
-    color: black;
+    color: black !important;
   }
 
  /* .ul-edu { */
@@ -82,13 +82,13 @@ body {
  /* } */
 
   .ul-edu li .description p.course {
-    color: black;
+    color: black !important;
     font-size: 0.9rem;
   }
 
   .ul-edu li .description p.institution {
     font-size: 0.75rem;
-    color: black;
+    color: black !important;
     /* color: rgba(0, 0, 0, 0.6); */
   }
 
@@ -107,7 +107,7 @@ body {
   /* } */
 
   .bio-text {
-    color: black;
+    color: black !important;
     max-width: 680px;
   }
 }
