@@ -28,7 +28,6 @@ marketing:
 
 # Site header
 header:
-  color: zinc
   navbar:
     enable: true
     blox: "navbar"
