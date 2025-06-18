@@ -54,7 +54,7 @@ interests:
 education:
   - area: PhD in Computer Science
     institution: Stanford University
-    date_start: Jan-2025
+    date_start: 2025
     date_end: present
     summary: |
       I work with Prof. Manolis Savva on computer graphics and embodied AI.
@@ -63,14 +63,14 @@ education:
     #   url: 'https://example.com'
   - area: Master in Artificial Intelligence
     institution: National University of Singapore
-    date_start: Aug-2022
-    date_end: Jun-2024
+    date_start: 2022
+    date_end: 2024
     summary: |
       I worked with Prof. Lin Shao on robotic manipulation.
   - area: Bachelor in Computer Science
     institution: Beihang University
-    date_start: Sept-2018
-    date_end: Jun-2022
+    date_start: 2018
+    date_end: 2022
     summary: |
       GPA: 3.75/4.0
 work:
@@ -78,16 +78,16 @@ work:
     company_name: Shanghai Jiao Tong University
     company_url: https://www.mvig.org/
     company_logo: ''
-    date_start: Jul-2024
-    date_end: Dec-2024
+    date_start: 2024
+    date_end: 2024
     summary: |2-
       I worked with Jun Lv on robotics and computer vision research projects.
   - position: Research intern at SenseTime Research
     company_name: SenseTime
     company_url: https://www.sensetime.com/en
     company_logo: ''
-    date_start: Aug-2021
-    date_end: Nov-2022
+    date_start: 2021
+    date_end: 2022
     summary: |
       I worked with Dailan He and Yan Wang on deep image compression.
 
