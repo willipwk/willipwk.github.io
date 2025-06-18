@@ -8,6 +8,8 @@ body {
 }
 
 .resume-biography {
+  color: black;
+  
   #profile {
     text-align: center;
     padding: 30px 10px;
