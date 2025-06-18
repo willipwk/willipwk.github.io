@@ -10,7 +10,7 @@ appearance:
 
 params:
   profile:
-    avatar: "avatar.jpg"
+    avatar: "avatar.png"
     avatar_size: 250
 
 # SEO
