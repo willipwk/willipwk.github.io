@@ -53,9 +53,9 @@ interests:
 
 education:
   - area: PhD in Computer Science
-    institution: Stanford University
+    institution: Simon Fraser University University
     date_start: 2025
-    date_end: present
+    date_end: 2030
     summary: |
       I work with Prof. Manolis Savva on computer graphics and embodied AI.
     # button:
