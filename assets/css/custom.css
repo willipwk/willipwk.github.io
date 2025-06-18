@@ -14,9 +14,9 @@ body {
     padding: 30px 10px;
     position: relative;
     color: black !important;
-    /* a {
+    a {
       color: black;
-    } */
+    }
   }
 
   /* Custom avatar size on homepage */
