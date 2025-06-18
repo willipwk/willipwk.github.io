@@ -167,4 +167,6 @@ skills:
 
 ## About Me
 
-Weikun Peng is a first-year PhD student at Simon Fraser University, advised by Prof. Manolis Savva. He received Master degree at National University of Singapore, where he spent wonderful two years working on robotic manipulation with Prof. Lin Shao. He received Bachelor degree at Beihang University. His research interests are computer graphics and robotics. Recently, he is curious about modeling the functionality of objects from ego-centric videos.
+Weikun Peng is a first-year PhD student at Simon Fraser University, advised by [Prof. Manolis Savva](https://msavva.github.io/). He received Master degree at National University of Singapore, where he spent wonderful two years working on robotic manipulation with [Prof. Lin Shao](https://linsats.github.io/). He received Bachelor degree at Beihang University. His research interests are computer graphics and robotics. Recently, he is curious about modeling the functionality of objects from ego-centric videos.
+
+Outside of research, he enjoys cooking and reading. His favorite novelist is Stefan Zweig.
