@@ -8,10 +8,10 @@
   /* Custom avatar size on homepage */
 
   .avatar {
-    width: 250px;
-    height: 250px;
-    max-width: 300px;
-    max-height: 300px;
+    width: 1900px;
+    height: 1900px;
+    max-width: 2000px;
+    max-height: 2000px;
     object-fit: cover;
   }
 
