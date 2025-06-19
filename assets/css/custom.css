@@ -39,17 +39,17 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    font-size: 2rem;
+    font-size: 20rem;
   }
 
   #profile .network-icon {
     margin-top: 1.0rem;
-    font-size: 2.0rem;
+    font-size: 20rem;
   }
 
   .network-icon li {
     margin-right: 10px;
-    font-size: 2rem;
+    font-size: 20rem;
     @media (max-width: 640px) {
       /* Min 48px Lighthouse tap targets on mobile */
       margin-right: 12px;
