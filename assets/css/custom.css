@@ -154,6 +154,11 @@ body {
     text-decoration: none; /* optional, for clarity */
   }
 
+  .bio-text a:hover {
+    color: #919ea3!important; /* Change this to your preferred hover color */
+    text-decoration: underline; /* Optional: underline on hover */
+  }
+
   /* ...existing code... */
 }
 
