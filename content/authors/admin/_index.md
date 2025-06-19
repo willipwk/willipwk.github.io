@@ -45,6 +45,8 @@ profiles:
     url: https://scholar.google.com/citations?hl=zh-CN&user=QL0HBOsAAAAJ
   - icon: academicons/orcid
     url: https://orcid.org/my-orcid?orcid=0009-0002-6720-2734
+  - icon: academicons/cv
+    url: uploads/resume.pdf
 
 interests:
   - Computer Graphics
