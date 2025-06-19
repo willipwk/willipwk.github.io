@@ -78,6 +78,11 @@ body {
     font-size: 1.0;
   }
 
+  .row {
+    display: flex;       /* lay children out in a row */
+    gap: 1rem;           /* space between the blocks (optional) */
+  }
+
   .col-md-2 {
     max-width: 200px;
   }
