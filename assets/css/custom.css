@@ -49,6 +49,7 @@ body {
 
   .network-icon li {
     margin-right: 10px;
+    font-size: 2rem;
     @media (max-width: 640px) {
       /* Min 48px Lighthouse tap targets on mobile */
       margin-right: 12px;
