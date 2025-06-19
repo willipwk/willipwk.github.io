@@ -119,60 +119,57 @@
     {{ end }}
 
 
+  <div class="grid-cols-2">
 
-  <div class="w-full" style="max-width:700px; margin-left:auto; margin-right:auto;"></div>
-    <div class="row">
-
-      {{ with $person.interests }}
-      <div class="col-md-2">
-        <div class="section-subheading mb-3">{{ i18n "interests" | markdownify }}</div>
-        <ul class="ul-interests mb-0">
-          {{ range . }}
-          <li>
-            {{ . | markdownify | emojify }}
-          </li>
-          {{ end }}
-        </ul>
-      </div>
-      {{ end }}
-
-      {{ with $person.education }}
-      <div class="col-md-5">
-        <div class="section-subheading mb-3">{{ i18n "education" | markdownify }}</div>
-        <!-- <ul class="ul-edu fa-ul mb-0">
-          {{ range . }}
-          <li class="flex items-start gap-3">
-            {{ partial "functions/get_icon" (dict "name" "academic-cap" "attributes" "style=\"\" class='flex-shrink-0 w-5 h-5 me-2 mt-1'") }}
-            <div class="description">
-              <p class="course">{{ .area }}{{ with .year }}, {{ . }}{{ end }}</p>
-              <p class="institution">{{ .institution }}</p>
-            </div>
-          </li>
-          {{ end }}
-        </ul> -->
-        <!-- ...existing code... -->
-        <ul class="ul-edu fa-ul mb-0">
-          {{ range . }}
-          <li class="flex items-start gap-3">
-            {{ partial "functions/get_icon" (dict "name" "academic-cap" "attributes" "style=\"\" class='flex-shrink-0 w-5 h-5 me-2 mt-1'") }}
-            <div class="description w-full">
-              <div class="flex justify-between items-center">
-                <p class="course mb-0">{{ .area }}</p>
-                <span class="text-sm", style="font-size: 1.0rem;">
-                  {{ with .date_start }}{{ (time .).Format "Jan 2006" }}{{ end }}
-                  {{ if .date_end }} - {{ (time .date_end).Format "Jan 2006" }}{{ else }} - present{{ end }}
-                </span>
-              </div>
-              <p class="institution">{{ .institution }}</p>
-            </div>
-          </li>
-          {{ end }}
-        </ul>
-        <!-- ...existing code... -->
-      </div>
-      {{ end }}
-
+    {{ with $person.interests }}
+    <div class="col-md-2">
+      <div class="section-subheading mb-3">{{ i18n "interests" | markdownify }}</div>
+      <ul class="ul-interests mb-0">
+        {{ range . }}
+        <li>
+          {{ . | markdownify | emojify }}
+        </li>
+        {{ end }}
+      </ul>
     </div>
+    {{ end }}
+
+    {{ with $person.education }}
+    <div class="col-md-5">
+      <div class="section-subheading mb-3">{{ i18n "education" | markdownify }}</div>
+      <!-- <ul class="ul-edu fa-ul mb-0">
+        {{ range . }}
+        <li class="flex items-start gap-3">
+          {{ partial "functions/get_icon" (dict "name" "academic-cap" "attributes" "style=\"\" class='flex-shrink-0 w-5 h-5 me-2 mt-1'") }}
+          <div class="description">
+            <p class="course">{{ .area }}{{ with .year }}, {{ . }}{{ end }}</p>
+            <p class="institution">{{ .institution }}</p>
+          </div>
+        </li>
+        {{ end }}
+      </ul> -->
+      <!-- ...existing code... -->
+      <ul class="ul-edu fa-ul mb-0">
+        {{ range . }}
+        <li class="flex items-start gap-3">
+          {{ partial "functions/get_icon" (dict "name" "academic-cap" "attributes" "style=\"\" class='flex-shrink-0 w-5 h-5 me-2 mt-1'") }}
+          <div class="description w-full">
+            <div class="flex justify-between items-center">
+              <p class="course mb-0">{{ .area }}</p>
+              <span class="text-sm", style="font-size: 1.0rem;">
+                {{ with .date_start }}{{ (time .).Format "Jan 2006" }}{{ end }}
+                {{ if .date_end }} - {{ (time .date_end).Format "Jan 2006" }}{{ else }} - present{{ end }}
+              </span>
+            </div>
+            <p class="institution">{{ .institution }}</p>
+          </div>
+        </li>
+        {{ end }}
+      </ul>
+      <!-- ...existing code... -->
+    </div>
+    {{ end }}
+
   </div>
 </div>
 </div>
