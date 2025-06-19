@@ -54,7 +54,7 @@ interests:
   - Literature
 
 education:
-  - area: PhD in Computer Science
+  - area: Ph.D. in Computer Science
     institution: Simon Fraser University University
     date_start: 2025-01-06
     date_end: ''
@@ -63,13 +63,13 @@ education:
     # button:
     #   text: 'Read Thesis'
     #   url: 'https://example.com'
-  - area: Master in Artificial Intelligence
+  - area: Msc. in Artificial Intelligence
     institution: National University of Singapore
     date_start: 2022-08-06
     date_end: 2024-06-30
     summary: |
       I worked with Prof. Lin Shao on robotic manipulation.
-  - area: Bachelor in Computer Science
+  - area: B.Eng. in Computer Science
     institution: Beihang University
     date_start: 2018-09-01
     date_end: 2022-06-30
@@ -169,6 +169,6 @@ skills:
 
 <!-- ## About Me -->
 
-Weikun Peng is a first-year PhD student at Simon Fraser University, advised by [Prof. Manolis Savva](https://msavva.github.io/). He received Master degree at National University of Singapore, where he spent wonderful two years working on robotic manipulation with [Prof. Lin Shao](https://linsats.github.io/). He received Bachelor degree at Beihang University. His research interests are computer graphics and robotics. Recently, he is curious about modeling the functionality of objects from ego-centric videos.
+I am a first-year PhD student at Simon Fraser University, advised by [Prof. Manolis Savva](https://msavva.github.io/). I received Master degree at National University of Singapore, where I spent wonderful two years working on robotic manipulation with [Prof. Lin Shao](https://linsats.github.io/). I received Bachelor degree at Beihang University. In addition, I was also fortunate to collaborate with [Prof. Cewu Lu](https://www.mvig.org/) at Shanghai Jiao Tong University and [Yan Wang](https://yanwang202199.github.io/) at SenseTime Research. My research interests lie in the intersection of computer graphics and robotics. Recently, I'm curious about modeling the functionality of objects from ego-centric videos and thus pushing forward the Real-to-Sim-to-Real learning paradigm in robotics.
 
-Outside of research, he enjoys cooking and reading. His favorite novelist is Stefan Zweig.
+Outside of research, I enjoy hiking, cooking and reading. My favorite novelist is Stefan Zweig.
