@@ -154,7 +154,7 @@
         <li class="flex items-start gap-3">
           {{ partial "functions/get_icon" (dict "name" "academic-cap" "attributes" "style=\"\" class='flex-shrink-0 w-5 h-5 me-2 mt-1'") }}
           <div class="description w-full">
-            <div class="flex justify-between items-center">
+            <div class="flex justify-between items-center gap-x-8">
               <p class="course mb-0">{{ .area }}</p>
               <span class="text-sm", style="font-size: 1.0rem;">
                 {{ with .date_start }}{{ (time .).Format "Jan 2006" }}{{ end }}
