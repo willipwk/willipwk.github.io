@@ -150,13 +150,13 @@ body {
   .bio-text a,
   .bio-text a:visited,
   .bio-text a:active {
-    color: #bac4c8 !important;
+    color: #919ea3 !important;
     text-decoration: none; /* optional, for clarity */
   }
 
   .bio-text a:hover {
-    color: #919ea3!important; /* Change this to your preferred hover color */
-    text-decoration: underline; /* Optional: underline on hover */
+    color: #727472 !important; /* Change this to your preferred hover color */
+    text-decoration: none; /* Optional: underline on hover */
   }
 
   /* ...existing code... */
