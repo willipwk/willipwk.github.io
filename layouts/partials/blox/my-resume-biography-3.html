@@ -126,7 +126,7 @@
     {{ with $person.interests }}
     <div class="">
       <div class="section-subheading mb-3">{{ i18n "interests" | markdownify }}</div>
-      <ul class="list-disc list-inside space-y-1 pl-5">
+      <ul class="ul-interests mb-0">
         {{ range . }}
         <li>
           {{ . | markdownify | emojify }}
@@ -139,7 +139,7 @@
     {{ with $person.education }}
     <div class="">
       <div class="section-subheading mb-3">{{ i18n "education" | markdownify }}</div>
-      <ul class="">
+      <ul class="ul-edu fa-ul mb-0">
         {{ range . }}
         <li class="flex items-start gap-3">
           {{ partial "functions/get_icon" (dict "name" "academic-cap" "attributes" "style=\"\" class='flex-shrink-0 w-5 h-5 me-2 mt-1'") }}
