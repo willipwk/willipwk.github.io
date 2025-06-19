@@ -54,8 +54,8 @@ interests:
 education:
   - area: PhD in Computer Science
     institution: Simon Fraser University University
-    date_start: 2025
-    date_end: 2030
+    date_start: 2025-01-06
+    date_end: 2030-08-10
     summary: |
       I work with Prof. Manolis Savva on computer graphics and embodied AI.
     # button:
@@ -63,14 +63,14 @@ education:
     #   url: 'https://example.com'
   - area: Master in Artificial Intelligence
     institution: National University of Singapore
-    date_start: 2022
-    date_end: 2024
+    date_start: 2022-08-06
+    date_end: 2024-06-30
     summary: |
       I worked with Prof. Lin Shao on robotic manipulation.
   - area: Bachelor in Computer Science
     institution: Beihang University
-    date_start: 2018
-    date_end: 2022
+    date_start: 2018-09-01
+    date_end: 2022-06-30
     summary: |
       GPA: 3.75/4.0
 work:
@@ -78,16 +78,16 @@ work:
     company_name: Shanghai Jiao Tong University
     company_url: https://www.mvig.org/
     company_logo: ''
-    date_start: 2024
-    date_end: 2024
+    date_start: 2024-07-27
+    date_end: 2024-12-31
     summary: |2-
       I worked with Jun Lv on robotics and computer vision research projects.
   - position: Research intern at SenseTime Research
     company_name: SenseTime
     company_url: https://www.sensetime.com/en
     company_logo: ''
-    date_start: 2021
-    date_end: 2022
+    date_start: 2021-08-17
+    date_end: 2022-11-07
     summary: |
       I worked with Dailan He and Yan Wang on deep image compression.
 
