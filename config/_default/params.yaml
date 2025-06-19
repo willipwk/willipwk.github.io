@@ -6,7 +6,7 @@
 # Appearance
 appearance:
   mode: light
-  color: cyan
+  theme_day: minimal
 
 # SEO
 marketing:
