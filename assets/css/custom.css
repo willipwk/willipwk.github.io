@@ -68,6 +68,7 @@ body {
   .ul-interests li {
     font-size: 1.1rem;
     color: black !important;
+    padding-left: 1.5em;
   }
 
   .flex-auto {
@@ -102,10 +103,9 @@ body {
  /*   list-style: none; */
  /* } */
 
- /* .ul-edu li { */
- /*   position: relative; */
- /*   padding: 0 15px 4px 3px; */
- /* } */
+ .ul-edu li {
+   padding-left: 1.5em;
+ }
 
  /* .ul-edu li .description p { */
  /*   margin: 0; */
