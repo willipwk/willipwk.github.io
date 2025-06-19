@@ -55,7 +55,7 @@ education:
   - area: PhD in Computer Science
     institution: Simon Fraser University University
     date_start: 2025-01-06
-    date_end: 2030-08-10
+    date_end: ''
     summary: |
       I work with Prof. Manolis Savva on computer graphics and embodied AI.
     # button:
