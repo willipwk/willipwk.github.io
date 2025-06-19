@@ -78,6 +78,14 @@ body {
     font-size: 1.0;
   }
 
+  .col-md-2 {
+    max-width: 200px;
+  }
+
+  .col-md-5 {
+    max-width: 500px;
+  }
+
  /* .ul-edu { */
  /*   list-style: none; */
  /* } */

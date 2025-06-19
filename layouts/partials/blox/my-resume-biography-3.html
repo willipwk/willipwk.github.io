@@ -124,7 +124,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 justify-between mt-6">
 
       {{ with $person.interests }}
-      <div class="col-md-5">
+      <div class="col-md-2">
         <div class="section-subheading mb-3">{{ i18n "interests" | markdownify }}</div>
         <ul class="ul-interests mb-0">
           {{ range . }}
@@ -137,7 +137,7 @@
       {{ end }}
 
       {{ with $person.education }}
-      <div class="col-md-7">
+      <div class="col-md-5">
         <div class="section-subheading mb-3">{{ i18n "education" | markdownify }}</div>
         <!-- <ul class="ul-edu fa-ul mb-0">
           {{ range . }}
@@ -158,7 +158,7 @@
             <div class="description w-full">
               <div class="flex justify-between items-center">
                 <p class="course mb-0">{{ .area }}</p>
-                <span class="text-sm">
+                <span class="text-sm", style="font-size: 1.0rem;">
                   {{ with .date_start }}{{ (time .).Format "Jan 2006" }}{{ end }}
                   {{ if .date_end }} - {{ (time .date_end).Format "Jan 2006" }}{{ else }} - present{{ end }}
                 </span>
