@@ -107,6 +107,16 @@ body {
     color: black !important;
     max-width: 680px;
   }
+
+  /* ...existing code... */
+  .bio-text a,
+  .bio-text a:visited,
+  .bio-text a:active {
+    color: black !important;
+    text-decoration: underline; /* optional, for clarity */
+  }
+
+  /* ...existing code... */
 }
 
 
