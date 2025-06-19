@@ -158,7 +158,7 @@
           <div class="description w-full">
             <div class="flex justify-between items-center">
               <p class="course mb-0">{{ .area }}</p>
-              <span class="text-sm text-gray-500">
+              <span class="text-sm">
                 {{ with .date_start }}{{ (time .).Year }}{{ end }}{{ if and .date_start .date_end }} - {{ end }}{{ with .date_end }}{{ (time .).Year }}{{ end }}
               </span>
             </div>
