@@ -112,8 +112,8 @@ body {
   .bio-text a,
   .bio-text a:visited,
   .bio-text a:active {
-    color: black !important;
-    text-decoration: underline; /* optional, for clarity */
+    color: #bac4c8 !important;
+    text-decoration: none; /* optional, for clarity */
   }
 
   /* ...existing code... */
