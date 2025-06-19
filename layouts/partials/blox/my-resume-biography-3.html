@@ -139,7 +139,7 @@
     {{ with $person.education }}
     <div class="">
       <div class="section-subheading mb-3">{{ i18n "education" | markdownify }}</div>
-      <ul class="ul-edu fa-ul mb-0">
+      <!-- <ul class="ul-edu fa-ul mb-0">
         {{ range . }}
         <li class="flex items-start gap-3">
           {{ partial "functions/get_icon" (dict "name" "academic-cap" "attributes" "style=\"\" class='flex-shrink-0 w-5 h-5 me-2 mt-1'") }}
@@ -149,7 +149,25 @@
           </div>
         </li>
         {{ end }}
+      </ul> -->
+      <!-- ...existing code... -->
+      <ul class="ul-edu fa-ul mb-0">
+        {{ range . }}
+        <li class="flex items-start gap-3">
+          {{ partial "functions/get_icon" (dict "name" "academic-cap" "attributes" "style=\"\" class='flex-shrink-0 w-5 h-5 me-2 mt-1'") }}
+          <div class="description w-full">
+            <div class="flex justify-between items-center">
+              <p class="course mb-0">{{ .area }}</p>
+              <span class="text-sm text-gray-500">
+                {{ with .date_start }}{{ (time .).Year }}{{ end }}{{ if and .date_start .date_end }} - {{ end }}{{ with .date_end }}{{ (time .).Year }}{{ end }}
+              </span>
+            </div>
+            <p class="institution">{{ .institution }}</p>
+          </div>
+        </li>
+        {{ end }}
       </ul>
+      <!-- ...existing code... -->
     </div>
     {{ end }}
 
