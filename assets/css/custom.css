@@ -74,6 +74,10 @@ body {
     max-width: 700px;
   }
 
+  .text_sm {
+    font-size: 1.0;
+  }
+
  /* .ul-edu { */
  /*   list-style: none; */
  /* } */
@@ -93,7 +97,7 @@ body {
   }
 
   .ul-edu li .description p.institution {
-    font-size: 0.9rem;
+    font-size: 1.0rem;
     color: black !important;
     /* color: rgba(0, 0, 0, 0.6); */
   }
