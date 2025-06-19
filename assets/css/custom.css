@@ -79,8 +79,11 @@ body {
   }
 
   .row {
-    display: flex;       /* lay children out in a row */
-    gap: 1rem;           /* space between the blocks (optional) */
+    display: flex;
+    justify-content: space-between;  /* pushes children to far left & right */
+    max-width: 700px;                /* overall row constraint */
+    margin: 0 auto;                  /* center the 700 px row in the page */
+    gap: 1rem;                       /* keeps a little breathing room */
   }
 
   .col-md-2 {
