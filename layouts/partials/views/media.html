@@ -78,9 +78,6 @@
     {{ if $has_attachments }}
     <div class="btn-links flex gap-2 items-center">
       {{ partial "page_links" (dict "page" $item "is_list" 1) }}
-      <button type="button" class="btn-cite" onclick="js-cite-modal()" aria-label="Cite">
-        Cite
-      </button>
     </div>
     {{ end }}
   </div>
