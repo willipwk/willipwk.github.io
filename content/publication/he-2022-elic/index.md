@@ -26,9 +26,8 @@ abstract: Recently, learned image compression techniques have achieved remarkabl
 
 summary: We develop a deep image compression model that leverages the uneven information distribution within the latent variables for efficient image compression.
 
+url_pdf: uploads/ELIC.pdf
 links:
-  - name: PDF
-    url: uploads/ELIC.pdf
   - name: arXiv
     url: https://arxiv.org/abs/2203.10886
 ---

@@ -32,13 +32,10 @@ abstract: To substantially enhance robot intelligence, there is a pressing need 
 
 summary: We develop a foundation model on robotic manipulation via modeling contact points on the object.
 
+url_pdf: 'uploads/manifoundation.pdf'
 links:
-  - name: PDF
-    url: uploads/manifoundation.pdf
   - name: arXiv
     url: https://arxiv.org/abs/2405.06964
-  - name: Website
-    url: https://manifoundationmodel.github.io/
-  - name: Code
-    url: https://github.com/NUS-LinS-Lab/ManiFM
+url_project: 'https://manifoundationmodel.github.io/'
+url_code: 'https://github.com/NUS-LinS-Lab/ManiFM'
 ---

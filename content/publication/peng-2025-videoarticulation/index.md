@@ -21,17 +21,12 @@ tags:
 
 featured: true
 
+url_pdf: 'uploads/video2articulation.pdf'
 links:
-- name: PDF
-  url: uploads/video2articulation.pdf
 - name: arXiv
   url: https://arxiv.org/abs/2506.08334
-- name: Website
-  url: https://3dlg-hcvc.github.io/video2articulation/
-- name: Video
-  url: https://youtu.be/x32Hn9BjSV0
-- name: Code
-  url: https://github.com/3dlg-hcvc/video2articulation
-- name: Dataset
-  url: https://huggingface.co/datasets/3dlg-hcvc/video2articulation
+url_project: 'https://3dlg-hcvc.github.io/video2articulation/'
+url_video: 'https://youtu.be/x32Hn9BjSV0'
+url_code: 'https://github.com/3dlg-hcvc/video2articulation'
+url_dataset: 'https://huggingface.co/datasets/3dlg-hcvc/video2articulation'
 ---
