@@ -29,18 +29,18 @@
 {{ end }}
 
 <div class="media stream-item flex flex-row items-start">
-  <div class="mr-3">
+  <div class="mr-3" style="width:500px; flex-shrink:0;">
     {{ $resource := partial "functions/get_featured_image.html" $item }}
     {{ with $resource }}
-      {{ $image := .Resize "150x" }}
+      {{ $image := .Resize "500x" }}
       {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
       <a href="{{$link}}" {{ $target | safeHTMLAttr }}>
         <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
-            alt="{{ $item.Title }}" loading="lazy">
+            alt="{{ $item.Title }}" loading="lazy" style="width:500px; height:auto;">
       </a>
     {{end}}
   </div>
-  <div class="media-body">
+  <div class="media-body" style="max-width:700px; width:700px;">
     <div class="section-subheading article-title mb-0 mt-0">
       <a href="{{$link}}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
     </div>
