@@ -1,7 +1,7 @@
 ---
 title: 'TieBot: Learning to Knot a Tie from Visual Demonstration through a Real-to-Sim-to-Real Approach'
 authors:
-- Weikun Peng
+- admin
 - Jun Lv
 - Yuwei Zeng
 - Haonan Chen

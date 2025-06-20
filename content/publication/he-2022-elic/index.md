@@ -4,7 +4,7 @@ title: 'ELIC: Efficient Learned Image Compression with Unevenly Grouped Space-Ch
 authors:
 - Dailan He
 - Ziming Yang
-- Weikun Peng
+- admin
 - Rui Ma
 - Hongwei Qin
 - Yan Wang

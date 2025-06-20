@@ -8,7 +8,7 @@ authors:
 - Chenrui Tie
 - Haozhuo Zheng
 - Haoyu Zhou
-- Weikun Peng
+- admin
 - Debang Wang
 - Tianrun Hu
 - Tianyi Chen

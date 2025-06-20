@@ -2,7 +2,7 @@
 title: Generalizable Articulated Object Reconstruction from Casually Captured RGBD
   Videos
 authors:
-- Weikun Peng
+- admin
 - Jun Lv
 - Cewu Lu
 - Manolis Savva
