@@ -51,7 +51,7 @@ sections:
           - publication
         featured_only: true
     design:
-      view: article-grid
+      view: media stream-item
       columns: 1
   # - block: collection
   #   content:
