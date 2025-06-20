@@ -42,8 +42,8 @@ sections:
   #       Please reach out to collaborate 😃
   #   design:
   #     columns: '1'
-  - block: collection
-    id: papers
+  - block: publications
+    id: publications
     content:
       title: Publications
       filters:
@@ -51,7 +51,7 @@ sections:
           - publication
         featured_only: true
     design:
-      view: media stream-item
+      view: media
       columns: 1
   # - block: collection
   #   content:
