@@ -51,7 +51,7 @@ sections:
           - publication
         featured_only: true
     design:
-      view: compact
+      view: media
       columns: 1
   # - block: collection
   #   content:
