@@ -1,6 +1,5 @@
 ---
-title: 'TieBot: Learning to Knot a Tie from Visual Demonstration through a Real-to-Sim-to-Real
-  Approach'
+title: 'TieBot: Learning to Knot a Tie from Visual Demonstration through a Real-to-Sim-to-Real Approach'
 authors:
 - Weikun Peng
 - Jun Lv
@@ -12,9 +11,8 @@ authors:
 - Lin Shao
 date: 2024-11-06
 publishDate: '2025-06-20T00:41:09.828583Z'
-publication_types:
-- paper-conference
-publication: '*Proceedings of The 8th Conference on Robot Learning*'
+publication_types: ["paper-conference"]
+publication: '*Proceedings of The 8th Conference on Robot Learning (CoRL)*'
 abstract: The tie-knotting task is highly challenging due to the tie’s high deformation
   and long-horizon manipulation actions. This work presents TieBot, a Real-to-Sim-to-Real
   learning from visual demonstration system for the robots to learn to knot a tie.
@@ -26,7 +24,12 @@ abstract: The tie-knotting task is highly challenging due to the tie’s high de
   of TieBot in simulation and the real world. In the real-world experiment, a dual-arm
   robot successfully knots a tie, achieving 50% success rate among 10 trials. Videos
   can be found on https://tiebots.github.io/.
+summary: We develop a Real-to-Sim-to-Real approach that enables learning tie-knotting skills for robots.
 links:
-- name: URL
-  url: https://proceedings.mlr.press/v270/peng25a.html
+- name: PDF
+  url: uploads/tiebot.pdf
+- name: arXiv
+  url: http://arxiv.org/abs/2407.03245
+- name: Website
+  url: https://tiebots.github.io/
 ---
