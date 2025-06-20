@@ -26,6 +26,8 @@ abstract: The tie-knotting task is highly challenging due to the tie’s high de
   robot successfully knots a tie, achieving 50% success rate among 10 trials. Videos
   can be found on https://tiebots.github.io/.
 summary: We develop a Real-to-Sim-to-Real approach that enables learning tie-knotting skills for robots.
+tag:
+- Learning from Human Demonstration
 url_pdf: 'uploads/tiebot.pdf'
 links:
 - name: arXiv
