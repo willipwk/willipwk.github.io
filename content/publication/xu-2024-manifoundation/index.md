@@ -17,6 +17,7 @@ authors:
 date: '2024-10-14'
 publishDate: '2025-06-20T00:41:09.821734Z'
 publication_types: ["paper-conference"]
+featured: true
 publication: '*2024 IEEE/RSJ International Conference on Intelligent Robots and Systems
   (IROS)*'
 doi: 10.1109/IROS58592.2024.10801782

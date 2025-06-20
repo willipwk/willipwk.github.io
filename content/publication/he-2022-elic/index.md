@@ -11,6 +11,7 @@ authors:
 date: '2022-06-19'
 publishDate: '2025-06-20T00:41:09.812837Z'
 publication_types: ["paper-conference"]
+featured: true
 publication: '*2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*'
 doi: 10.1109/CVPR52688.2022.00563
 tags:

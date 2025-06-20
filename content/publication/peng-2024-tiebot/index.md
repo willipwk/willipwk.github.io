@@ -12,6 +12,7 @@ authors:
 date: 2024-11-06
 publishDate: '2025-06-20T00:41:09.828583Z'
 publication_types: ["paper-conference"]
+featured: true
 publication: '*Proceedings of The 8th Conference on Robot Learning (CoRL)*'
 abstract: The tie-knotting task is highly challenging due to the tie’s high deformation
   and long-horizon manipulation actions. This work presents TieBot, a Real-to-Sim-to-Real
