@@ -331,13 +331,13 @@ body {
   background: transparent;
   border: 0;
   appearance: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 1000 !important;
   line-height: 1;
   color: #000;
   opacity: 0.5;
   cursor: pointer;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 0px 0px 1px black;
 }
 
 .modal-header .close:hover,
@@ -350,7 +350,7 @@ body {
 
 .modal-header .close span {
   font-weight: 1000 !important;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 0px 0px 1px black;
 }
 
 .modal-title {
