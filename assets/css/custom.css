@@ -320,7 +320,7 @@ body {
 	justify-content: space-between;
   font-size: 1rem;
 	padding: 1rem 1rem;
-	border-bottom: 1px solid #dee2e6;
+	border-bottom: none;
 	border-top-left-radius: calc(.3rem - 1px);
 	border-top-right-radius: calc(.3rem - 1px)
 }
