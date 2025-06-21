@@ -171,6 +171,22 @@ body {
   margin-right: auto;
 }
 
+/* Style author links in the stream-meta article-metadata block */
+/* .stream-meta.article-metadata a {
+  color: #0074d9;
+  text-decoration: none;
+  transition: color 0.2s;
+} */
+
+.section-subheading.article-title a:hover {
+	text-decoration: underline;
+}
+
+.stream-meta.article-metadata a:hover {
+  color: #727472;           /* Hover color */
+  text-decoration: underline;
+}
+
 .modal-open {
 	overflow: hidden
 }
