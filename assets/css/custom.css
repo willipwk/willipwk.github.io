@@ -335,6 +335,8 @@ body {
 	line-height: 1.5;
   flex: 1 1 auto; /* allow title to grow and fill space */
   text-align: left;
+  font-size: 1.5rem;    /* Increase text size */
+  font-weight: bold;     /* Make text bold */
 }
 
 .modal-body {
