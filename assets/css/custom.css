@@ -369,6 +369,8 @@ body {
 	padding: 1rem;
   /* max-height: 400px; */
   overflow-y: auto;
+  background-color: #f0f0f0; /* or use any gray shade you prefer */
+  font-size: 1rem;
 }
 
 .modal-footer {
