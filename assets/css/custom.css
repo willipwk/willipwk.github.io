@@ -538,7 +538,8 @@ textarea {
 	margin: 0;
 	font-family: inherit;
 	font-size: 1.5rem;
-	line-height: inherit
+	line-height: inherit;
+  font-weight: bold;     /* Make text bold */
 }
 
 button,
