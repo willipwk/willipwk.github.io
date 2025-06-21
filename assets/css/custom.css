@@ -178,6 +178,11 @@ body {
   transition: color 0.2s;
 } */
 
+/* Change background color of the publications section */
+#section-publications {
+  background-color: #f0f2f2; /* Replace with your preferred color */
+}
+
 .section-subheading.article-title a:hover {
 	text-decoration: underline;
 }
@@ -185,6 +190,14 @@ body {
 .stream-meta.article-metadata a:hover {
   color: #727472;           /* Hover color */
   text-decoration: underline;
+}
+
+.btn-links a {
+	color: #727472;
+}
+
+.btn-links a:hover {
+	text-decoration: underline;
 }
 
 .modal-open {
