@@ -6,6 +6,11 @@ authors:
 - Jun Lv
 - Cewu Lu
 - Manolis Savva
+author_links:
+- https://willipwk.github.io/
+- https://lyuj1998.github.io/
+- https://www.mvig.org/
+- https://msavva.github.io/
 date: '2025-06-10'
 publishDate: '2025-06-20T00:41:09.836157Z'
 publication_types: ["article"]
