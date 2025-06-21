@@ -332,7 +332,7 @@ body {
   border: 0;
   appearance: none;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 1;
   color: #000;
   opacity: 0.5;
@@ -394,7 +394,7 @@ body {
 
 @media (min-width:576px) {
 	.modal-dialog {
-		max-width: 500px;
+		max-width: 700px;
 		margin: 1.75rem auto
 	}
 
