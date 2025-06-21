@@ -314,7 +314,8 @@ body {
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-align: start;
-	align-items: flex-start;
+	/* align-items: flex-start; */
+  align-items: center;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
   font-size: 1rem;
@@ -331,7 +332,9 @@ body {
 
 .modal-title {
 	margin-bottom: 0;
-	line-height: 1.5
+	line-height: 1.5;
+  flex: 1 1 auto; /* allow title to grow and fill space */
+  text-align: left;
 }
 
 .modal-body {
