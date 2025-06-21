@@ -515,7 +515,7 @@ select,
 textarea {
 	margin: 0;
 	font-family: inherit;
-	font-size: inherit;
+	font-size: 1.5rem;
 	line-height: inherit
 }
 
