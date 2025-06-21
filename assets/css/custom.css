@@ -332,11 +332,12 @@ body {
   border: 0;
   appearance: none;
   font-size: 1.5rem;
-  font-weight: bold !important;
+  font-weight: 1000 !important;
   line-height: 1;
   color: #000;
   opacity: 0.5;
   cursor: pointer;
+  text-shadow: 1px 1px 2px black;
 }
 
 .modal-header .close:hover,
@@ -348,7 +349,8 @@ body {
 }
 
 .modal-header .close span {
-  font-weight: bold !important;
+  font-weight: 1000 !important;
+  text-shadow: 1px 1px 2px black;
 }
 
 .modal-title {
