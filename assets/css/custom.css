@@ -562,3 +562,9 @@ select {
 button {
 	-webkit-appearance: button
 }
+
+*,
+::after,
+::before {
+	box-sizing: border-box
+}
