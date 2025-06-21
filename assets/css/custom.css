@@ -332,7 +332,7 @@ body {
   border: 0;
   appearance: none;
   font-size: 1.5rem;
-  font-weight: 10000 !important;
+  font-weight: bold !important;
   line-height: 1;
   color: #000;
   opacity: 0.5;
@@ -348,7 +348,7 @@ body {
 }
 
 .modal-header .close span {
-  font-weight: 10000 !important;
+  font-weight: bold !important;
 }
 
 .modal-title {
@@ -543,7 +543,7 @@ textarea {
 	font-family: inherit;
 	font-size: 1.5rem;
 	line-height: inherit;
-  font-weight: 10000 !important;     /* Make text bold */
+  font-weight: bold;     /* Make text bold */
 }
 
 button,
@@ -554,4 +554,11 @@ input {
 button,
 select {
 	text-transform: none
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+	-webkit-appearance: button
 }
