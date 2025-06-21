@@ -169,6 +169,8 @@ document.addEventListener('DOMContentLoaded', function () {
         $('#modal-error').html(msg + xhr.status + ' ' + xhr.statusText);
       } else {
         $('.js-download-cite').attr('href', filename);
+        // Remove 'highlight' class from <pre> if present
+        modal.find('.modal-body pre').removeClass('highlight');
       }
     });
     modal.modal('show');
