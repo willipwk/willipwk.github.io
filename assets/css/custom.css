@@ -327,7 +327,24 @@ body {
 
 .modal-header .close {
 	padding: 1rem 1rem;
-	margin: -1rem -1rem -1rem auto
+	margin: -1rem -1rem -1rem auto;
+  background: transparent;
+  border: 0;
+  appearance: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.modal-header .close:hover,
+.modal-header .close:focus {
+  color: #000;
+  text-decoration: none;
+  opacity: 0.75;
+  outline: none;
 }
 
 .modal-title {
