@@ -178,22 +178,17 @@ body {
   transition: color 0.2s;
 } */
 
-/* Change background color of the publications section */
-#section-publications {
-  background-color: #f0f2f2; /* Replace with your preferred color */
-}
-
 .section-subheading.article-title a:hover {
 	text-decoration: underline;
 }
 
 .stream-meta.article-metadata a:hover {
-  color: #727472;           /* Hover color */
+  color: #5b5d5b;           /* Hover color */
   text-decoration: underline;
 }
 
 .btn-links a {
-	color: #727472;
+	color: #5b5d5b;
 }
 
 .btn-links a:hover {
@@ -426,6 +421,14 @@ body {
 
 .modal-footer>* {
 	margin: .25rem
+}
+
+.modal-footer a {
+	color: #c0c0c0;
+}
+
+.modal-footer a:hover {
+	color: #727472;
 }
 
 .modal-scrollbar-measure {
