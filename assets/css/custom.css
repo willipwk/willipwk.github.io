@@ -187,6 +187,14 @@ body {
   text-decoration: underline;
 }
 
+.btn-links a {
+	color: #5b5d5b;
+}
+
+.btn-links a:hover {
+	text-decoration: underline;
+}
+
 .modal-open {
 	overflow: hidden
 }
@@ -531,7 +539,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary:hover {
-	color: #fff;
+	color: white;
 	background-color: #727472;
 	border-color: #727472
 }
