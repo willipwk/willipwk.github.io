@@ -39,7 +39,7 @@ publication_types: ["paper-conference"]
 featured: true
 publication: 'IEEE/RSJ International Conference on Intelligent Robots and Systems
   **(IROS)** 2024'
-doi: 10.1109/IROS58592.2024.10801782
+# doi: 10.1109/IROS58592.2024.10801782
 tags:
 - Manipulation Foundation Model
 
