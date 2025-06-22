@@ -8,7 +8,7 @@ authors:
 - Rui Ma
 - Hongwei Qin
 - Yan Wang
-author_lins:
+author_links:
 - https://scholar.google.com/citations?user=f5MTTy4AAAAJ&hl=zh-CN
 - https://scholar.google.cz/citations?user=IziPwhUAAAAJ
 - https://willipwk.github.io/
