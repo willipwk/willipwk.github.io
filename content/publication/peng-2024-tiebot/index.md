@@ -9,6 +9,15 @@ authors:
 - Jichen Sun
 - Cewu Lu
 - Lin Shao
+author_links:
+- https://willipwk.github.io/
+- https://lyuj1998.github.io/
+- https://friolero.github.io/
+- https://chenhn02.github.io/
+- https://sihengz02.github.io/
+- https://www.linkedin.com/in/jichen-sun/
+- https://www.mvig.org/
+- https://linsats.github.io/
 date: 2024-11-06
 publishDate: '2025-06-20T00:41:09.828583Z'
 publication_types: ["paper-conference"]

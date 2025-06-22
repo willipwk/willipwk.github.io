@@ -14,6 +14,25 @@ authors:
 - Tianyi Chen
 - Zhouliang Yu
 - Lin Shao
+author_notes:
+  - 'Equal contribution'
+  - 'Equal contribution'
+  - 'Equal contribution'
+  - 'Equal contribution'
+author_links:
+- https://ariszxxu.github.io/
+- https://chongkaigao.com/
+- https://panda-shawn.github.io/
+- https://openreview.net/profile?id=~Gang_Yang8
+- https://crtie.github.io/
+- http://zzdirty.cn/
+- https://github.com/object814
+- https://willipwk.github.io/
+- https://www.linkedin.com/in/debang-wang-5690b5158?originalSubdomain=sg
+- https://h-tr.github.io/
+- https://scholar.google.com/citations?user=mzMZdrsAAAAJ&hl=en
+- https://scholar.google.com/citations?user=qUMjnPcAAAAJ&hl=en
+- https://linsats.github.io/
 date: '2024-10-14'
 publishDate: '2025-06-20T00:41:09.821734Z'
 publication_types: ["paper-conference"]

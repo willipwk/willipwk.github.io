@@ -8,6 +8,13 @@ authors:
 - Rui Ma
 - Hongwei Qin
 - Yan Wang
+author_lins:
+- https://scholar.google.com/citations?user=f5MTTy4AAAAJ&hl=zh-CN
+- https://scholar.google.cz/citations?user=IziPwhUAAAAJ
+- https://willipwk.github.io/
+- https://scholar.google.com/citations?user=xetsV78AAAAJ&hl=zh-CN
+- http://qinhongwei.com/academic/
+- https://yanwang202199.github.io/
 date: '2022-06-19'
 publishDate: '2025-06-20T00:41:09.812837Z'
 publication_types: ["paper-conference"]
