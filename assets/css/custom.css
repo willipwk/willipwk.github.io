@@ -192,6 +192,7 @@ body {
 }
 
 .btn-links a:hover {
+	color: #71706e;
 	text-decoration: underline;
 }
 
