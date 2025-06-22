@@ -75,7 +75,7 @@ sections:
   #   design:
   #     view: article-grid
   #     columns: 1
-  - block: resume-experience
+  - block: my-resume-experience
     content:
       username: admin
     design:
@@ -84,10 +84,6 @@ sections:
       # Education or Experience section first?
       # is_education_first: false
       show_education: false
-      background:
-        color: '#f0f2f2'
-      # filters:
-      #   - work
   - block: collection
     id: project
     content:
@@ -98,6 +94,8 @@ sections:
     design:
       view: article-grid
       columns: 2
+      background:
+        color: '#f0f2f2'
     # design:
     #   view: article-grid
     #   columns: 2
