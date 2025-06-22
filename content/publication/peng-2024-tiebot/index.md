@@ -22,7 +22,7 @@ date: 2024-11-06
 publishDate: '2025-06-20T00:41:09.828583Z'
 publication_types: ["paper-conference"]
 featured: true
-publication: 'Proceedings of The 8th Conference on Robot Learning **(CoRL)** 2024    <span style="color:red font-weight:bold">Oral</span>'
+publication: 'Proceedings of The 8th Conference on Robot Learning **(CoRL)** 2024    <span style="color:red; font-weight:bold">Oral</span>'
 abstract: The tie-knotting task is highly challenging due to the tie’s high deformation
   and long-horizon manipulation actions. This work presents TieBot, a Real-to-Sim-to-Real
   learning from visual demonstration system for the robots to learn to knot a tie.

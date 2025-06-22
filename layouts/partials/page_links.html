@@ -65,6 +65,7 @@
 {{ range $page.Params.projects }}
   {{ with (site.GetPage (printf "project/%s" .)) }}
   <a class="hb-attachment-link {{ if $is_list }}hb-attachment-small{{else}}hb-attachment-large{{end}}" href="{{ .RelPermalink }}">
+    {{ partial "functions/get_icon" (dict "name" "arrow-top-right-on-square" "attributes" "style=\"height: 1em\" class='inline-block'") }}
     {{ i18n "btn_project" }}
   </a>
   {{ else }}
