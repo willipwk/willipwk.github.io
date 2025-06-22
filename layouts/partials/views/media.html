@@ -64,7 +64,7 @@
       </div>
       {{ with $item.Params.publication }}
         <div class="publication-name">
-          {{ . }}
+          {{ . | markdownify}}
         </div>
       {{ end }}
       {{ else if not $show_authors_only }}
