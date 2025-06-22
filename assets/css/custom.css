@@ -423,13 +423,13 @@ body {
 	margin: .25rem
 }
 
-.modal-footer a {
+/* .modal-footer a {
 	color: #c0c0c0;
 }
 
 .modal-footer a:hover {
-	color: #727472;
-}
+	color: white;
+} */
 
 .modal-scrollbar-measure {
 	position: absolute;
