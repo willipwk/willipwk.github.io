@@ -53,6 +53,8 @@ sections:
     design:
       view: media
       columns: 1
+      background:
+        color: f0f2f2
   # - block: collection
   #   content:
   #     title: Publications
