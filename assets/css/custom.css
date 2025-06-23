@@ -607,7 +607,7 @@ button {
 	-webkit-appearance: button
 }
 
-.company-logo {
+.inline-block.mr-2 {
   width: 2.5em;
   height: auto;
   min-width: 2.5em;
