@@ -83,15 +83,15 @@ work:
     date_start: 2024-07-27
     date_end: 2024-12-31
     summary: |2-
-      I worked with Jun Lv on robotics and computer vision research projects.
+      I worked with Jun Lv on robotic manipulation and articulated object reconstruction projects.
   - position: Research intern at SenseTime Research
     company_name: SenseTime
     company_url: https://www.sensetime.com/en
     company_logo: uploads/SenseTime_logo.png
     date_start: 2021-08-17
     date_end: 2022-11-07
-    summary: |
-      I worked with Dailan He and Yan Wang on deep image compression.
+    summary: |2-
+      I worked with Dailan He and Dr. Yan Wang on deep image compression and image compression for machine perception.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -169,6 +169,6 @@ skills:
 
 <!-- ## About Me -->
 
-I am a first-year PhD student at Simon Fraser University, advised by [Prof. Manolis Savva](https://msavva.github.io/). I received Master degree at National University of Singapore, where I spent wonderful two years working on robotic manipulation with [Prof. Lin Shao](https://linsats.github.io/). I received Bachelor degree at Beihang University. In addition, I was also fortunate to collaborate with [Prof. Cewu Lu](https://www.mvig.org/) at Shanghai Jiao Tong University and [Prof. Yan Wang](https://yanwang202199.github.io/) at SenseTime Research. My research interests lie in the intersection of computer graphics and robotics. Recently, I'm curious about modeling the functionality of objects from ego-centric videos and thus pushing forward the Real-to-Sim-to-Real learning paradigm in robotics.
+I am a first-year PhD student at Simon Fraser University, advised by [Prof. Manolis Savva](https://msavva.github.io/). I received Master degree at National University of Singapore, where I spent wonderful two years working on robotic manipulation with [Prof. Lin Shao](https://linsats.github.io/). I received Bachelor degree at Beihang University. In addition, I was also fortunate to collaborate with [Prof. Cewu Lu](https://www.mvig.org/) at Shanghai Jiao Tong University and [Dr. Yan Wang](https://yanwang202199.github.io/) at SenseTime Research. My research interests lie in the intersection of computer graphics and robotics. Recently, I'm curious about modeling the functionality of objects from ego-centric videos and thus pushing forward the Real-to-Sim-to-Real learning paradigm in robotics.
 
 Outside of research, I enjoy hiking, cooking and reading. My favorite novelist is Stefan Zweig.
