@@ -79,7 +79,7 @@ work:
   - position: Research intern at MVIG group
     company_name: Shanghai Jiao Tong University
     company_url: https://www.mvig.org/
-    company_logo: ''
+    company_logo: uploads/Sjtu_logo.png
     date_start: 2024-07-27
     date_end: 2024-12-31
     summary: |2-
@@ -87,7 +87,7 @@ work:
   - position: Research intern at SenseTime Research
     company_name: SenseTime
     company_url: https://www.sensetime.com/en
-    company_logo: ''
+    company_logo: uploads/SenseTime_logo.png
     date_start: 2021-08-17
     date_end: 2022-11-07
     summary: |
