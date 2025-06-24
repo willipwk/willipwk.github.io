@@ -84,6 +84,8 @@ sections:
       # Education or Experience section first?
       # is_education_first: false
       view: card
+      background:
+        color: white
   - block: collection
     id: project
     content:
