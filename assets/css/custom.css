@@ -650,3 +650,7 @@ button {
 ::before {
 	box-sizing: border-box
 }
+
+.page-footer {
+  background-color: #fff !important;
+}
