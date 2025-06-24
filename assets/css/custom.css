@@ -635,8 +635,8 @@ button {
   font-size: 1.0rem; /* Adjust as needed */
 }
 
-#section-post a,
-#section-post a:visited {
+#post a,
+#post a:visited {
   color: #74cee0 !important; /* Replace with your preferred color */
   text-decoration: none;
 }
