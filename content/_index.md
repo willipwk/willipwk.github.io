@@ -54,7 +54,7 @@ sections:
       view: media
       columns: 1
       background:
-        color: '#a7f2fe'
+        color: '#d7f9ff'
   # - block: collection
   #   content:
   #     title: Publications
@@ -95,7 +95,7 @@ sections:
       view: article-grid
       columns: 2
       background:
-        color: '#a7f2fe'
+        color: '#d7f9ff'
   - block: collection
     id: post
     content:
