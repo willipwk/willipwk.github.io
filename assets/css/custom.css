@@ -183,16 +183,16 @@ body {
 }
 
 .stream-meta.article-metadata a:hover {
-  color: #5b5d5b;           /* Hover color */
+  color: #51e3ff;           /* Hover color */
   text-decoration: underline;
 }
 
 .btn-links a {
-	color: #5b5d5b;
+	color: #78dcf0;
 }
 
 .btn-links a:hover {
-	color: #71706e;
+	color: #51e3ff;
 	text-decoration: underline;
 }
 
@@ -534,7 +534,7 @@ fieldset:disabled a.btn {
 	pointer-events: none
 }
 
-.btn-outline-primary {
+/* .btn-outline-primary {
 	color: #c0c0c0;
 	border-color: #c0c0c0
 }
@@ -543,6 +543,17 @@ fieldset:disabled a.btn {
 	color: white;
 	background-color: #727472;
 	border-color: #727472
+} */
+
+.btn-outline-primary {
+	color: #6de7fe;
+	border-color: #6de7fe
+}
+
+.btn-outline-primary:hover {
+	color: #fff;
+	background-color: #6de7fe;
+	border-color: #6de7fe
 }
 
 .btn-outline-primary.focus,
