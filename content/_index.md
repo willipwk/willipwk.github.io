@@ -96,6 +96,16 @@ sections:
       columns: 2
       background:
         color: '#f0f2f2'
+  - block: collection
+    id: post
+    content:
+      title: Post
+      filters:
+        folders:
+          - post
+    design:
+      view: card
+      columns: 1
     # design:
     #   view: article-grid
     #   columns: 2
