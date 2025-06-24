@@ -635,6 +635,11 @@ button {
   font-size: 1.0rem; /* Adjust as needed */
 }
 
+#section-post a {
+  color: #74cee0; /* Replace with your preferred color */
+  text-decoration: none;
+}
+
 *,
 ::after,
 ::before {
