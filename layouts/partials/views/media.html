@@ -29,10 +29,10 @@
 {{ end }}
 
 <div class="media stream-item flex flex-row items-start">
-  <div class="mr-3" style="width:500px; height:400px; flex-shrink:0; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+  <div class="mr-3" style="width:500px; height:250px; flex-shrink:0; display:flex; align-items:center; justify-content:center; overflow:hidden;">
     {{ $resource := partial "functions/get_featured_image.html" $item }}
     {{ with $resource }}
-      {{ $image := .Fill "500x400 Center" }}
+      {{ $image := .Fill "500x250 Center" }}
       {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
       <a href="{{$link}}" {{ $target | safeHTMLAttr }}>
         <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
