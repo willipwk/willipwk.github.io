@@ -635,6 +635,10 @@ button {
   font-size: 1.0rem; /* Adjust as needed */
 }
 
+.article-grid-tag {
+  color: #509eae !important; /* Your preferred color */
+}
+
 #post a,
 #post a:visited {
   color: #74cee0 !important; /* Replace with your preferred color */
