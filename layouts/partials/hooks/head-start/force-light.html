@@ -1,0 +1,7 @@
+<script>
+/* kill any chance of dark mode */
+localStorage.setItem('wcPreferredColorMode', 'light');      // new key (Tailwind site)
+localStorage.setItem('wc-color-mode',        'light');      // legacy key
+document.documentElement.classList.remove('dark');          // Tailwind strategy
+document.documentElement.setAttribute('data-theme', 'light'); // Fallback strategy
+</script>
