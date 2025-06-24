@@ -1,3 +1,13 @@
+/* Force light mode: remove dark class from html/body if present */
+html.dark, body.dark {
+  background: white !important;
+  color: black !important;
+}
+html.dark *, body.dark * {
+  background: inherit !important;
+  color: inherit !important;
+}
+
 body {
   font-family: "Georgia", serif;  /* or any font you want */
   color:black
