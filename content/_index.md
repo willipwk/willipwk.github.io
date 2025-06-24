@@ -106,6 +106,8 @@ sections:
     design:
       view: card
       columns: 1
+      background:
+        color: white
     # design:
     #   view: article-grid
     #   columns: 2
