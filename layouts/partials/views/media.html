@@ -34,15 +34,16 @@
     {{ with $resource }}
       {{ $image := .Fill "500x250 Center" }}
       {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
-      <a href="{{$link}}" {{ $target | safeHTMLAttr }}>
+      <!-- <a href="{{$link}}" {{ $target | safeHTMLAttr }}> -->
         <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
             alt="{{ $item.Title }}" loading="lazy" style="width:500px; height:auto; border: 4px solid #509eae; border-radius: 8px;">
-      </a>
+      <!-- </a> -->
     {{end}}
   </div>
   <div class="media-body" style="max-width:800px; width:800px;">
     <div class="section-subheading article-title mb-0 mt-0">
-      <a href="{{$link}}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
+      <!-- <a href="{{$link}}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a> -->
+       {{ $item.Title }}
     </div>
 
     <div class="stream-meta article-metadata">
