@@ -4,7 +4,7 @@ body {
 }
 
 #site-header.header {
-  background-color: #a7f2fe;
+  background-color: #c5d9dd;
 }
 
 #section-my-resume-biography-3 {
@@ -150,12 +150,12 @@ body {
   .bio-text a,
   .bio-text a:visited,
   .bio-text a:active {
-    color: #adf3ff !important;
+    color: #c5d9dd !important;
     text-decoration: none; /* optional, for clarity */
   }
 
   .bio-text a:hover {
-    color: #6eeaff !important; /* Change this to your preferred hover color */
+    color: #a3d6e0 !important; /* Change this to your preferred hover color */
     text-decoration: none; /* Optional: underline on hover */
   }
 
