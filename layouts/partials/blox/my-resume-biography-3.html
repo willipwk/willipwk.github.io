@@ -26,8 +26,8 @@
   {{- $img = resources.Get (path.Join "media" .) -}}
   {{ if $img }}
     {{- $img = $img.Process "webp" -}}
-    <div class="w-full bg-gray-200 dark:bg-gray-900 flex flex-wrap items-center justify-center">
-      <div class="w-full bg-white rounded dark:bg-gray-800">
+    <div class="w-full bg-gray-200 flex flex-wrap items-center justify-center">
+      <div class="w-full bg-white rounded">
         <div class="h-2/4 sm:h-64 overflow-hidden w-full">
           <img class="w-full object-cover"
                src="{{$img.RelPermalink}}"
@@ -103,7 +103,7 @@
 
   <div class="flex-auto max-w-prose md:mt-1">
     {{ with ($block.content.text | emojify | $page.RenderString) | default $person_page.Content }}
-    <div class="pt-2 justify-content-center prose prose-slate dark:prose-invert">
+    <div class="pt-2 justify-content-center prose prose-slate">
       <div class="bio-text" {{ with $block.design.biography.style }}{{ (printf "style=\"%s\"" .) | safe.HTMLAttr }}{{end}}>
         {{ . }}
       </div>
