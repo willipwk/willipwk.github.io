@@ -156,7 +156,7 @@
           <div class="description w-full">
             <div class="flex justify-between items-center gap-x-8">
               <p class="course mb-0">{{ .area }}</p>
-              <span class="text-sm", style="font-size: 1.0rem;">
+              <span class="text-sm">
                 {{ with .date_start }}{{ (time .).Format "Jan 2006" }}{{ end }}
                 {{ if .date_end }} - {{ (time .date_end).Format "Jan 2006" }}{{ else }} - present{{ end }}
               </span>
