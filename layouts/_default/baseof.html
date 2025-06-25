@@ -23,7 +23,7 @@
         {{ end }}
       {{ end }}
     </div>
-    <div class="page-body {{if ne .Type "landing"}} {{end}}">
+    <div class="page-body {{if ne .Type "landing"}} my-10{{end}}">
       {{ block "main" . }}{{ end }}
     </div>
     <div class="page-footer">

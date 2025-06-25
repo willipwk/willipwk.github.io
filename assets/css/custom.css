@@ -654,3 +654,9 @@ button {
 .page-footer {
   background-color: #fff !important;
 }
+
+.page-body.my-10 {
+	background-color: #fff !important;
+	margin-top: 0;
+	margin-bottom: 0;
+}
