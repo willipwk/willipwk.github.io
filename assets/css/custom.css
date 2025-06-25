@@ -146,6 +146,21 @@ body {
     font-size: 2.0rem;
   }
 
+  /* ...existing code... */
+
+	@media (max-width: 768px) {
+	.ul-interests li,
+	.ul-edu li {
+		font-size: 0.75rem !important;
+	}
+	.ul-edu li .description p.course,
+	.ul-edu li .description p.institution {
+		font-size: 0.75rem !important;
+	}
+	}
+
+	/* ...existing code... */
+
   /* .dark .portrait-title h3 { */
   /*  color: rgb(255 255 255 / 90%); */
   /*  font-weight: bold; */
