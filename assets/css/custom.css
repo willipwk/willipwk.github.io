@@ -215,12 +215,32 @@ body {
   .media.stream-item {
     flex-direction: column !important;
     align-items: stretch;
-  }
-  .media.stream-item > .mr-3,
-  .media.stream-item > .media-body {
     width: 100% !important;
-    max-width: 100% !important;
-    margin-right: 0 !important;
+    max-width: 100vw !important;
+    box-sizing: border-box;
+    padding: 0 0.5rem;
+  }
+  .media.stream-item > .mr-3 {
+    width: 100% !important;
+    max-width: 100vw !important;
+    height: auto !important;
+    min-width: 0 !important;
+    padding: 0;
+    margin: 0 auto 1rem auto;
+  }
+  .media.stream-item img {
+    width: 100% !important;
+    max-width: 100vw !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+  }
+  .media.stream-item .media-body {
+    width: 100% !important;
+    max-width: 100vw !important;
+    min-width: 0 !important;
+    box-sizing: border-box;
+    padding: 0;
   }
 }
 
