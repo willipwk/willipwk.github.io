@@ -1,0 +1,4 @@
+/* assets/css/only-light.css — put it anywhere Hugo pipelines CSS */
+:root {
+  color-scheme: only light;
+}

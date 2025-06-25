@@ -8,6 +8,10 @@ appearance:
   mode: light
   theme_day: minimal
 
+assets:
+  css:
+    - css/only-light.css
+
 # SEO
 marketing:
   seo:
