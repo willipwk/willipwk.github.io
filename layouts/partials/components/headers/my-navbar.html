@@ -99,13 +99,23 @@
         </ul>
       </li>
       {{ else }}
-      {{ $url := "" }}
+      <!-- {{ $url := "" }}
       {{- if findRE `^#` .URL -}}
         {{- if not $.IsHome -}}
           {{- $url = site.Home.RelPermalink -}}
         {{- end }}
         {{- $url = .URL -}}
         {{- else -}}
+        {{- $url = .URL | relLangURL -}}
+      {{- end -}} -->
+      {{ $url := "" }}
+      {{- if findRE `^#` .URL -}}
+        {{- if not $.IsHome -}}
+          {{- $url = printf "%s%s" site.Home.RelPermalink .URL -}}
+        {{- else -}}
+          {{- $url = .URL -}}
+        {{- end }}
+      {{- else -}}
         {{- $url = .URL | relLangURL -}}
       {{- end -}}
       <li class="nav-item">
