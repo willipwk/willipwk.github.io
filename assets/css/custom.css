@@ -152,11 +152,11 @@ body {
 	@media (max-width: 768px) {
 	.ul-interests li,
 	.ul-edu li {
-		font-size: 0.85rem !important;
+		font-size: 0.95rem !important;
 	}
 	.ul-edu li .description p.course,
 	.ul-edu li .description p.institution {
-		font-size: 0.85rem !important;
+		font-size: 0.95rem !important;
 	}
 	}
 
