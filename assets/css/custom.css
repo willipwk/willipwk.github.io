@@ -90,18 +90,34 @@ body {
     display: flex;
     justify-content: space-between;  /* pushes children to far left & right */
     max-width: 900px;                /* overall row constraint */
-	width: 100%;
+	
     margin: 0 auto;                  /* center the 700 px row in the page */
     gap: 1rem;                       /* keeps a little breathing room */
   }
 
   .col-md-2 {
     max-width: 250px;
+	width: 100%;
   }
 
   .col-md-5 {
     max-width: 650px;
+	width: 100%;
   }
+
+  /* Responsive: stack interests and education in a single column on small screens */
+	@media (max-width: 768px) {
+		.row {
+			flex-direction: column !important;
+			gap: 2rem;
+			align-items: stretch;
+		}
+		.col-md-2,
+		.col-md-5 {
+			max-width: 100%;
+			width: 100%;
+		}
+	}
 
  /* .ul-edu { */
  /*   list-style: none; */
