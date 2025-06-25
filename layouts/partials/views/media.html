@@ -29,7 +29,7 @@
 {{ end }}
 
 <div class="media stream-item flex flex-row items-start">
-  <div class="mr-3" style="width:500px; height:250px; flex-shrink:0; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+  <div class="mr-3">
     {{ $resource := partial "functions/get_featured_image.html" $item }}
     {{ with $resource }}
       {{ $image := .Fill "500x250 Center" }}
@@ -40,7 +40,7 @@
       <!-- </a> -->
     {{end}}
   </div>
-  <div class="media-body" style="max-width:800px; width:800px;">
+  <div class="media-body">
     <div class="section-subheading article-title mb-0 mt-0">
       <!-- <a href="{{$link}}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a> -->
        {{ $item.Title }}
