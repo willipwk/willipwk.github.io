@@ -211,6 +211,19 @@ body {
   transition: color 0.2s;
 } */
 
+@media (max-width: 768px) {
+  .media.stream-item {
+    flex-direction: column !important;
+    align-items: stretch;
+  }
+  .media.stream-item > .mr-3,
+  .media.stream-item > .media-body {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-right: 0 !important;
+  }
+}
+
 .section-subheading.article-title a:hover {
 	text-decoration: underline;
 }
