@@ -79,6 +79,11 @@ I love reading during my spare time. Some of them are very impressive to me and 
 
 * Brave New World
 
+### Edgar Allan Poe
+
+* The Fall of the House of Usher
+* The Oval Portrait
+
 ## Prose
 
 ### Dingjun Wang (*王鼎钧*)
@@ -100,6 +105,14 @@ I love reading during my spare time. Some of them are very impressive to me and 
 
 * 欧阳修词集
 
+### Dante Alighieri
+
+* Divine Comedy (*Divina Commedia*)
+
+### John Milton
+
+* Paradise Lost
+
 ## Biography
 
 ### Irving Stone
@@ -113,6 +126,10 @@ I love reading during my spare time. Some of them are very impressive to me and 
 ### Qichao Liang (*梁启超*)
 
 * 王安石传
+
+### Richard Milhous Nixon
+
+* Leaders
 
 ## Philosophy
 

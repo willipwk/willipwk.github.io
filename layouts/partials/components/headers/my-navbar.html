@@ -32,7 +32,7 @@
     <input id="nav-toggle" type="checkbox" class="hidden" />
     <label
       for="nav-toggle"
-      class="order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1">
+      class="order-3 cursor-pointer flex items-center lg:hidden lg:order-1">
       <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
         <title>Open Menu</title>
         <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
@@ -99,13 +99,23 @@
         </ul>
       </li>
       {{ else }}
-      {{ $url := "" }}
+      <!-- {{ $url := "" }}
       {{- if findRE `^#` .URL -}}
         {{- if not $.IsHome -}}
           {{- $url = site.Home.RelPermalink -}}
         {{- end }}
         {{- $url = .URL -}}
         {{- else -}}
+        {{- $url = .URL | relLangURL -}}
+      {{- end -}} -->
+      {{ $url := "" }}
+      {{- if findRE `^#` .URL -}}
+        {{- if not $.IsHome -}}
+          {{- $url = printf "%s%s" site.Home.RelPermalink .URL -}}
+        {{- else -}}
+          {{- $url = .URL -}}
+        {{- end }}
+      {{- else -}}
         {{- $url = .URL | relLangURL -}}
       {{- end -}}
       <li class="nav-item">

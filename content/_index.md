@@ -19,7 +19,7 @@ sections:
       #   text: Download CV
       #   url: uploads/resume.pdf
     design:
-      css_class: dark
+      css_class: light
       background:
         color: white
         # image:
@@ -84,6 +84,8 @@ sections:
       # Education or Experience section first?
       # is_education_first: false
       view: card
+      background:
+        color: white
   - block: collection
     id: project
     content:
@@ -106,6 +108,8 @@ sections:
     design:
       view: card
       columns: 1
+      background:
+        color: white
     # design:
     #   view: article-grid
     #   columns: 2
