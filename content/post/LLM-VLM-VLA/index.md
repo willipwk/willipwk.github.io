@@ -30,7 +30,7 @@ Here I want to diverge a bit to talk about Turing Machine. We know that Turing M
 
 We can think natural language problem as manipulating language symbols. What I feel is, LLM is the approximate algorithm we find to solve natural language problem, by optimizing billions of parameters from numerous text data. And we find the function of mapping between of sets of language symbols.
 
-How about VLM? We not only have language symbols, but also symbols for visual data. Let's consider symbols for visual data as RGB pixels. There are in total $256\times 256\times 256=2^{24}$ different symbols. Now we want to find an approxiamte function of mapping two sets of language+visual symbols. I am afraid the desired function will be much more complex than just mapping between two sets of language symbols. 
+How about VLM? We not only have language symbols, but also symbols for visual data. Let's consider symbols for visual data as RGB pixels. There are in total 256x256x256=2^24 different symbols. Now we want to find an approxiamte function of mapping two sets of language+visual symbols. I am afraid the desired function will be much more complex than just mapping between two sets of language symbols. 
 
 I won't deny that neural network is extremely powerful that it can almost approximate any function we want. But we have to consider the effort of getting the desired function. If we simply consider LLM memorizes every text prompt and answer, the effort we need is almost all available text on the Internet. For VLM, the effort may be all available text plus visual data, which is far more larger than any dataset currently available.  
 
@@ -41,7 +41,7 @@ The symbol set for VLA would be even larger than VLM. Now we need to add action 
 ### Moravec's Paradox
 
 Finally, I want to talk a bit more on Moravec's Paradox:
-> "it is comparatively easy to make computers exhibit adult level performance on intelligence tests or playing checkers, and difficult or impossible to give them the skills of a one-year-old when it comes to perception and mobility"
+> it is comparatively easy to make computers exhibit adult level performance on intelligence tests or playing checkers, and difficult or impossible to give them the skills of a one-year-old when it comes to perception and mobility
 
 If we take the perspective of turing machine, we may get some intuition of Moravec's Paradox. We human summarizes knowledge from real world into a compact set of symbols, which is language. But once we try to incoporate richer and low-level observation from real world such as visual data and action data, the set of symbol grows exponentially. As a consequence, the computation problem becomes much harder, and requires much larger amounts of data to find approximate algorithm to solve it.
 
