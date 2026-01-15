@@ -1,7 +1,7 @@
 ---
 title: "How AI looks like in 1948?"
 summary: Revisiting a very old paper by Alan Turing
-date: 2026-1-14
+date: 2026-01-14
 authors:
   - admin
 tags:
