@@ -10,7 +10,7 @@ image:
   caption: 'Image generated from GPT'
 ---
 
-This post comes from an interesting discussion with one of my friends. We were discussing why VLM currently still made a lot of mistakes, while LLM could give more accurate answers.
+This post comes from an interesting discussion with one of my friends. We were discussing why VLM currently still make a lot of mistakes, while LLM could give more accurate answers.
 
 Here I consider a VLM is a model that takes in images / videos and text prompt, and outputs text or images / videos. So models that solve text-guided vision tasks are also considered as VLM, such as SAM3, GroundingDINO, etc.
 
