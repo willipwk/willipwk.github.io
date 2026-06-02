@@ -1,0 +1,74 @@
+{{/* Hugo Blox: Academic Service */}}
+
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+
+{{ $author := $block.content.username | default "admin" }}
+{{ $person_page_path := (printf "/authors/%s" $author) }}
+{{ $person_page := site.GetPage $person_page_path }}
+{{ if not $person_page }}
+{{ errorf "Could not find an author page at `%s`." $person_page_path }}
+{{ end }}
+{{ $person := $person_page.Params }}
+
+<div class="flex flex-col items-center max-w-prose mx-auto">
+  <div class="w-full px-6 sm:px-0">
+
+    {{ with $person.academic_service }}
+
+    <h2 class="mb-8 text-3xl font-bold text-gray-900 text-center">Academic Service</h2>
+
+    {{ with .reviewing }}
+    <div class="mb-8">
+      <h3 class="mb-4 text-xl font-semibold text-gray-800">Reviewer</h3>
+      <ul class="space-y-2 list-none">
+        {{ range . }}
+        <li class="flex items-start text-gray-700">
+          <span class="mr-2 mt-1 flex-shrink-0 w-2 h-2 rounded-full bg-primary-600 inline-block"></span>
+          <span>{{ .venue }}</span>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+
+    {{ with .teaching }}
+    <div class="mb-8">
+      <h3 class="mb-4 text-xl font-semibold text-gray-800">Teaching Assistant</h3>
+      <ul class="space-y-2 list-none">
+        {{ range . }}
+        <li class="flex items-start text-gray-700">
+          <span class="mr-2 mt-1 flex-shrink-0 w-2 h-2 rounded-full bg-primary-600 inline-block"></span>
+          <span>
+            <span class="font-medium">{{ .course }}</span>
+            {{ with .institution }}, {{ . }}{{ end }}
+            {{ with .term }} ({{ . }}){{ end }}
+          </span>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+
+    {{ with .organizing }}
+    <div class="mb-8">
+      <h3 class="mb-4 text-xl font-semibold text-gray-800">Organizing</h3>
+      <ul class="space-y-2 list-none">
+        {{ range . }}
+        <li class="flex items-start text-gray-700">
+          <span class="mr-2 mt-1 flex-shrink-0 w-2 h-2 rounded-full bg-primary-600 inline-block"></span>
+          <span>
+            {{ with .role }}<span class="font-medium">{{ . }}</span>{{ end }}
+            {{ if and .role .event }}, {{ end }}
+            {{ with .event }}{{ . }}{{ end }}
+            {{ with .venue }} @ {{ . }}{{ end }}
+          </span>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+
+    {{ end }}
+  </div>
+</div>

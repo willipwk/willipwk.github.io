@@ -1,0 +1,47 @@
+{{/* Hugo Blox: Awards */}}
+
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+
+{{ $author := $block.content.username | default "admin" }}
+{{ $person_page_path := (printf "/authors/%s" $author) }}
+{{ $person_page := site.GetPage $person_page_path }}
+{{ if not $person_page }}
+{{ errorf "Could not find an author page at `%s`." $person_page_path }}
+{{ end }}
+{{ $person := $person_page.Params }}
+
+<div class="flex flex-col items-center max-w-prose mx-auto">
+  <div class="w-full px-6 sm:px-0">
+
+    {{ with $person.awards }}
+
+    <h2 class="mb-8 text-3xl font-bold text-gray-900 text-center">Awards</h2>
+
+    <ol class="relative border-s border-gray-200">
+      {{ range . }}
+      <li class="mb-8 ms-6">
+        <span class="absolute flex items-center justify-center w-6 h-6 bg-primary-100 rounded-full -start-3 ring-8 ring-white">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256" class="w-4 h-4 text-primary-800">
+            <path d="M232,64H208V48a8,8,0,0,0-8-8H56a8,8,0,0,0-8,8V64H24A16,16,0,0,0,8,80V96a40,40,0,0,0,40,40h3.65A80.13,80.13,0,0,0,120,191.61V216H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V191.61A80.13,80.13,0,0,0,204.35,136H208a40,40,0,0,0,40-40V80A16,16,0,0,0,232,64ZM48,120A24,24,0,0,1,24,96V80H48v32q0,4,.39,8Zm80,56a64,64,0,1,1,64-64A64.07,64.07,0,0,1,128,176Zm104-80a24,24,0,0,1-24,24h-.39q.39-4,.39-8V80h24Z"/>
+          </svg>
+        </span>
+        <h3 class="mb-1 text-lg font-semibold text-gray-900">{{ .title }}</h3>
+        <div class="mb-2 text-sm font-normal text-gray-500">
+          {{ with .date }}{{ (time .) | time.Format "January 2006" }}{{ end }}
+          {{ with .awarder }}
+            {{ if $.date }} · {{ end }}{{ . }}
+          {{ end }}
+        </div>
+        {{ with .summary }}
+        {{ if . }}
+        <p class="text-base font-normal text-gray-500">{{ . | $page.RenderString }}</p>
+        {{ end }}
+        {{ end }}
+      </li>
+      {{ end }}
+    </ol>
+
+    {{ end }}
+  </div>
+</div>

@@ -113,6 +113,20 @@ sections:
     # design:
     #   view: article-grid
     #   columns: 2
+  - block: my-resume-academic-service
+    id: academic-service
+    content:
+      username: admin
+    design:
+      background:
+        color: '#ebf4f6'
+  - block: my-resume-awards
+    id: awards
+    content:
+      username: admin
+    design:
+      background:
+        color: white
   # - block: collection
   #   id: news
   #   content:

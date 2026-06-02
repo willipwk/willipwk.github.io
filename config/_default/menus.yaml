@@ -25,3 +25,9 @@ main:
   - name: Post
     url: "/#post"
     weight: 40
+  - name: Academic Service
+    url: "/#academic-service"
+    weight: 50
+  - name: Awards
+    url: "/#awards"
+    weight: 60
