@@ -18,6 +18,19 @@
 
 {{ $has_attachments := partial "functions/has_attachments" $item }}
 
+{{/* Prefer linking the title/thumbnail to the project page, then the page itself. */}}
+{{ $title_link := $link }}
+{{ $title_target := $target }}
+{{ with $item.Params.url_project }}
+  {{ $title_link = . }}
+  {{ $title_target = "target=\"_blank\" rel=\"noopener\"" }}
+{{ end }}
+
+{{/* Self author (bolded). */}}
+{{ $self_page := site.GetPage "/authors/admin" }}
+{{ $self_name := "Weikun Peng" }}
+{{ with $self_page }}{{ $self_name = .Params.title | default $self_name }}{{ end }}
+
 {{/* Get summary. */}}
 {{ $summary := "" }}
 {{ if $item.Params.summary }}
@@ -28,61 +41,66 @@
   {{ $summary = $item.Summary }}
 {{ end }}
 
-<div class="media stream-item flex flex-row items-start">
-  <div class="mr-3">
-    {{ $resource := partial "functions/get_featured_image.html" $item }}
-    {{ with $resource }}
-      {{ $image := .Fill "500x250 Center" }}
-      {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
-      <!-- <a href="{{$link}}" {{ $target | safeHTMLAttr }}> -->
-        <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
-            alt="{{ $item.Title }}" loading="lazy" style="width:500px; height:auto; border: 4px solid #509eae; border-radius: 8px;">
-      <!-- </a> -->
-    {{end}}
-  </div>
-  <div class="media-body">
-    <div class="section-subheading article-title mb-0 mt-0">
-      <!-- <a href="{{$link}}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a> -->
-       {{ $item.Title }}
-    </div>
+<div class="pub-card group flex flex-col sm:flex-row items-start gap-5 p-5 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition-shadow duration-200">
 
-    <div class="stream-meta article-metadata">
-      {{ if eq $item.Type "event" }}
-      <div>
-        <span>
-          {{ partial "functions/get_event_dates" $item }}
-        </span>
-        {{ with $item.Params.location }}
-        <span class="middot-divider"></span>
-        <span>{{ . }}</span>
-        {{ end }}
-      </div>
-      {{ end }}   
-      
-      {{ if and $show_authors_only $item.Params.authors }}
-      <div>
-        {{ partial "page_metadata_authors" $item }}
-      </div>
-      {{ with $item.Params.publication }}
-        <div class="publication-name">
-          {{ . | markdownify}}
-        </div>
-      {{ end }}
-      {{ else if not $show_authors_only }}
-      {{ partial "page_metadata" (dict "page" $item "is_list" 1) }}
+  {{ $resource := partial "functions/get_featured_image.html" $item }}
+  {{ with $resource }}
+    {{ $image := .Fill "600x375 Center" }}
+    {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
+    <div class="w-full sm:w-72 flex-shrink-0 overflow-hidden rounded-lg">
+      <a href="{{ $title_link }}" {{ $title_target | safeHTMLAttr }}>
+        <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
+            alt="{{ $item.Title }}" loading="lazy"
+            class="w-full h-auto rounded-lg border-2 transition-transform duration-200 group-hover:scale-105"
+            style="border-color: #509eae;">
+      </a>
+    </div>
+  {{ end }}
+
+  <div class="flex-1 min-w-0">
+    <a href="{{ $title_link }}" {{ $title_target | safeHTMLAttr }}
+       class="block text-lg font-bold text-gray-900 leading-snug hover:text-primary-600 transition-colors">
+      {{ $item.Title }}
+    </a>
+
+    {{ if eq $item.Type "event" }}
+    <div class="mt-1 text-sm text-gray-600">
+      <span>{{ partial "functions/get_event_dates" $item }}</span>
+      {{ with $item.Params.location }}<span class="middot-divider"></span><span>{{ . }}</span>{{ end }}
+    </div>
+    {{ end }}
+
+    {{/* Authors — bold the site owner. */}}
+    {{ with $item.Params.authors }}
+    <div class="mt-1 text-sm text-gray-700 leading-relaxed">
+      {{ $author_links := $item.Params.author_links }}
+      {{ range $i, $a := . }}
+        {{- if $i }}, {{ end -}}
+        {{- $is_self := eq $a "admin" -}}
+        {{- $name := cond $is_self $self_name $a -}}
+        {{- $url := "" -}}
+        {{- if and $author_links (lt $i (len $author_links)) }}{{ $url = index $author_links $i }}{{ end -}}
+        {{- if $url -}}
+          <a href="{{ $url }}" target="_blank" rel="noopener" class="{{ if $is_self }}font-bold text-gray-900{{ else }}hover:text-primary-600{{ end }} transition-colors">{{ $name }}</a>
+        {{- else -}}
+          <span class="{{ if $is_self }}font-bold text-gray-900{{ end }}">{{ $name }}</span>
+        {{- end -}}
       {{ end }}
     </div>
-    
-    {{ with $summary }}
-    <!-- <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="summary-link"> -->
-      <div class="article-style mt-3">
-        {{.}}
-      </div>
-    <!-- </a> -->
     {{ end }}
-    
+
+    {{ with $item.Params.publication }}
+    <div class="mt-1 text-sm font-semibold italic" style="color: #3f7e8c;">
+      {{ . | markdownify }}{{ with $item.Date }}, {{ .Year }}{{ end }}
+    </div>
+    {{ end }}
+
+    {{ with $summary }}
+    <p class="mt-2 text-sm text-gray-500 leading-relaxed">{{ . }}</p>
+    {{ end }}
+
     {{ if $has_attachments }}
-    <div class="btn-links flex gap-2 items-center">
+    <div class="pub-links mt-3 flex flex-wrap gap-2 items-center">
       {{ partial "page_links" (dict "page" $item "is_list" 1) }}
     </div>
     {{ end }}
