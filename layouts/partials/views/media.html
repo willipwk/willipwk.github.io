@@ -92,7 +92,7 @@
 
     {{ with $item.Params.publication }}
     <div class="mt-1 text-sm font-semibold italic" style="color: #3f7e8c; font-size: 1.05rem;">
-      {{ . | markdownify }}{{ with $item.Date }}, {{ .Year }}{{ end }}
+      {{ . | markdownify }}
     </div>
     {{ end }}
 
