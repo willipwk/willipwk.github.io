@@ -1,3 +1,21 @@
+<style>
+  /* Keep the BibTeX "copy" button pinned to the top-right corner while the
+     code is scrolled horizontally. The theme adds the copy button as an
+     absolutely-positioned child of <pre>; if <pre> is also the horizontal
+     scroll container, the button scrolls away with the content. Moving the
+     horizontal scroll onto the inner <code> keeps <pre> (and the button) fixed. */
+  #modal .modal-body pre {
+    position: relative;
+    overflow: visible;
+    padding-right: 2.5rem; /* room so the button never overlaps the text */
+  }
+  #modal .modal-body pre code {
+    display: block;
+    overflow-x: auto;
+    white-space: pre;
+  }
+</style>
+
 <!-- Citation modal -->
 <div id="modal" class="modal fade" role="dialog">
   <div class="modal-dialog">
