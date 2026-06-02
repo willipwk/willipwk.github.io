@@ -27,10 +27,11 @@
           </svg>
         </span>
         <h3 class="mb-1 text-lg font-semibold text-gray-900">{{ .title }}</h3>
+        {{ $date := .date }}
         <div class="mb-2 text-sm font-normal text-gray-500">
-          {{ with .date }}{{ (time .) | time.Format "January 2006" }}{{ end }}
+          {{ with $date }}{{ (time .) | time.Format "January 2006" }}{{ end }}
           {{ with .awarder }}
-            {{ if $.date }} · {{ end }}{{ . }}
+            {{ if $date }} · {{ end }}{{ . }}
           {{ end }}
         </div>
         {{ with .summary }}

@@ -152,15 +152,15 @@ academic_service:
 
 awards:
   - title: "FAS Graduate Fellowship"
-    date: ‘2026-05-07’
+    date: '2026-05-07'
     awarder: "Simon Fraser University"
     summary: ""
   - title: "Helmut & Hugo Eppich Family Graduate Scholarship"
-    date: ‘2026-01-12’
+    date: '2026-01-12'
     awarder: "Simon Fraser University"
     summary: ""
   - title: "2nd Prize National Student Computer System Capability Challenge"
-    date: ‘2021-08-17’
+    date: '2021-08-17'
     awarder: "CCF"
     summary: ""
 ---
