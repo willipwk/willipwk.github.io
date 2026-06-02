@@ -41,25 +41,26 @@
   {{ $summary = $item.Summary }}
 {{ end }}
 
-<div class="pub-card group flex flex-row items-start gap-5 p-5 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition-shadow duration-200" style="gap: 1.25rem; padding: 1.25rem;">
+<div class="pub-card group flex flex-row items-start gap-5 p-5 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition-shadow duration-200" style="gap: 1.5rem; padding: 1.5rem;">
 
   {{ $resource := partial "functions/get_featured_image.html" $item }}
   {{ with $resource }}
     {{ $image := .Fill "600x375 Center" }}
     {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
-    <div class="flex-shrink-0 overflow-hidden rounded-lg" style="flex: 0 0 auto; width: 260px; max-width: 100%;">
+    <div class="flex-shrink-0 overflow-hidden rounded-lg" style="flex: 0 0 auto; width: 312px; max-width: 100%;">
       <a href="{{ $title_link }}" {{ $title_target | safeHTMLAttr }}>
         <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
             alt="{{ $item.Title }}" loading="lazy"
             class="transition-transform duration-200 group-hover:scale-105"
-            style="display: block; width: 260px; max-width: 100%; height: auto; border: 2px solid #509eae; border-radius: 8px;">
+            style="display: block; width: 312px; max-width: 100%; height: auto; border: 2px solid #509eae; border-radius: 8px;">
       </a>
     </div>
   {{ end }}
 
   <div class="flex-1 min-w-0" style="flex: 1 1 0%; min-width: 0;">
     <a href="{{ $title_link }}" {{ $title_target | safeHTMLAttr }}
-       class="block text-lg font-bold text-gray-900 leading-snug hover:text-primary-600 transition-colors">
+       class="block text-lg font-bold text-gray-900 leading-snug hover:text-primary-600 transition-colors"
+       style="font-size: 1.35rem;">
       {{ $item.Title }}
     </a>
 
@@ -72,7 +73,7 @@
 
     {{/* Authors — bold the site owner. */}}
     {{ with $item.Params.authors }}
-    <div class="mt-1 text-sm text-gray-700 leading-relaxed">
+    <div class="mt-1 text-sm text-gray-700 leading-relaxed" style="font-size: 1.05rem;">
       {{ $author_links := $item.Params.author_links }}
       {{ range $i, $a := . }}
         {{- if $i }}, {{ end -}}
@@ -90,13 +91,13 @@
     {{ end }}
 
     {{ with $item.Params.publication }}
-    <div class="mt-1 text-sm font-semibold italic" style="color: #3f7e8c;">
+    <div class="mt-1 text-sm font-semibold italic" style="color: #3f7e8c; font-size: 1.05rem;">
       {{ . | markdownify }}{{ with $item.Date }}, {{ .Year }}{{ end }}
     </div>
     {{ end }}
 
     {{ with $summary }}
-    <p class="mt-2 text-sm text-gray-500 leading-relaxed">{{ . }}</p>
+    <p class="mt-2 text-sm text-gray-500 leading-relaxed" style="font-size: 1.05rem;">{{ . }}</p>
     {{ end }}
 
     {{ if $has_attachments }}
