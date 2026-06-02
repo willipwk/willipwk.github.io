@@ -19,53 +19,40 @@
     <h2 class="mb-8 text-3xl font-bold text-gray-900 text-center">Academic Service</h2>
 
     {{ with .reviewing }}
-    <div class="mb-8">
-      <h3 class="mb-4 text-xl font-semibold text-gray-800">Reviewer</h3>
-      <ul class="space-y-2 list-none">
-        {{ range . }}
-        <li class="flex items-start text-gray-700">
-          <span class="mr-2 mt-1 flex-shrink-0 w-2 h-2 rounded-full bg-primary-600 inline-block"></span>
-          <span>{{ .venue }}</span>
-        </li>
-        {{ end }}
-      </ul>
+    <div class="mb-6">
+      <h3 class="mb-2 text-xl font-semibold text-gray-800">Reviewer</h3>
+      {{ $venues := slice }}
+      {{ range . }}{{ $venues = $venues | append .venue }}{{ end }}
+      <p class="text-gray-700">{{ delimit $venues ", " }}</p>
     </div>
     {{ end }}
 
     {{ with .teaching }}
-    <div class="mb-8">
-      <h3 class="mb-4 text-xl font-semibold text-gray-800">Teaching Assistant</h3>
-      <ul class="space-y-2 list-none">
-        {{ range . }}
-        <li class="flex items-start text-gray-700">
-          <span class="mr-2 mt-1 flex-shrink-0 w-2 h-2 rounded-full bg-primary-600 inline-block"></span>
-          <span>
-            <span class="font-medium">{{ .course }}</span>
-            {{ with .institution }}, {{ . }}{{ end }}
-            {{ with .term }} ({{ . }}){{ end }}
-          </span>
-        </li>
-        {{ end }}
-      </ul>
+    <div class="mb-6">
+      <h3 class="mb-2 text-xl font-semibold text-gray-800">Teaching Assistant</h3>
+      {{ $items := slice }}
+      {{ range . }}
+        {{ $s := printf "<span class=\"font-medium\">%s</span>" .course }}
+        {{ with .institution }}{{ $s = printf "%s, %s" $s . }}{{ end }}
+        {{ with .term }}{{ $s = printf "%s (%s)" $s . }}{{ end }}
+        {{ $items = $items | append $s }}
+      {{ end }}
+      <p class="text-gray-700">{{ delimit $items "; " | safeHTML }}</p>
     </div>
     {{ end }}
 
     {{ with .organizing }}
-    <div class="mb-8">
-      <h3 class="mb-4 text-xl font-semibold text-gray-800">Organizing</h3>
-      <ul class="space-y-2 list-none">
-        {{ range . }}
-        <li class="flex items-start text-gray-700">
-          <span class="mr-2 mt-1 flex-shrink-0 w-2 h-2 rounded-full bg-primary-600 inline-block"></span>
-          <span>
-            {{ with .role }}<span class="font-medium">{{ . }}</span>{{ end }}
-            {{ if and .role .event }}, {{ end }}
-            {{ with .event }}{{ . }}{{ end }}
-            {{ with .venue }} @ {{ . }}{{ end }}
-          </span>
-        </li>
-        {{ end }}
-      </ul>
+    <div class="mb-6">
+      <h3 class="mb-2 text-xl font-semibold text-gray-800">Organizing</h3>
+      {{ $items := slice }}
+      {{ range . }}
+        {{ $s := "" }}
+        {{ with .role }}{{ $s = printf "<span class=\"font-medium\">%s</span>" . }}{{ end }}
+        {{ with .event }}{{ $s = cond (eq $s "") . (printf "%s, %s" $s .) }}{{ end }}
+        {{ with .venue }}{{ $s = printf "%s @ %s" $s . }}{{ end }}
+        {{ $items = $items | append $s }}
+      {{ end }}
+      <p class="text-gray-700">{{ delimit $items "; " | safeHTML }}</p>
     </div>
     {{ end }}
 
