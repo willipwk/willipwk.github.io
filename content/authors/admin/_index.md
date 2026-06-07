@@ -139,6 +139,7 @@ academic_service:
   reviewing:
     - venue: "NeurIPS"
     - venue: "ECCV"
+    - venue: "3DV"
     - venue: "SIGGRAPH Asia"
     - venue: "RA-L"
   teaching:
@@ -149,6 +150,7 @@ academic_service:
     - role: "Organizer"
       event: "Post-3DV Workshop"
       venue: "3DV 2026"
+      url: "https://sites.google.com/view/sfu-workshops/sfu3dv2026"
 
 awards:
   - title: "FAS Graduate Fellowship"

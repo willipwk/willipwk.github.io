@@ -46,9 +46,13 @@
       <h3 class="mb-2 text-xl font-semibold text-gray-800">Organizing</h3>
       {{ $items := slice }}
       {{ range . }}
+        {{ $url := .url }}
         {{ $s := "" }}
         {{ with .role }}{{ $s = printf "<span class=\"font-medium\">%s</span>" . }}{{ end }}
-        {{ with .event }}{{ $s = cond (eq $s "") . (printf "%s, %s" $s .) }}{{ end }}
+        {{ with .event }}
+          {{ $eventText := cond (ne $url "") (printf "<a href=\"%s\" target=\"_blank\" rel=\"noopener\" class=\"hover:underline text-primary-700\">%s</a>" $url .) . }}
+          {{ $s = cond (eq $s "") $eventText (printf "%s, %s" $s $eventText) }}
+        {{ end }}
         {{ with .venue }}{{ $s = printf "%s @ %s" $s . }}{{ end }}
         {{ $items = $items | append $s }}
       {{ end }}
